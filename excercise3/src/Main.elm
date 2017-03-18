@@ -12,6 +12,11 @@ import Random
 {--
 TODO import the Data module and expose everything
 --}
+{--
+TODO We now use an Html.program instead of the beginner program. Read about it:
+It allows you to handle side effects with commands and subscriptions.
+https://guide.elm-lang.org/architecture/effects/
+--}
 
 
 main =
