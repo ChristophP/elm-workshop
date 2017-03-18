@@ -55,7 +55,7 @@ viewFeedback feedback =
                     "Sucks"
 
                 OtherFeedback comment ->
-                    "(Other)" ++ comment
+                    "(Other) " ++ comment
     in
         span [ class "feedback" ] [ text ("Feedback: " ++ feedbackText) ]
 

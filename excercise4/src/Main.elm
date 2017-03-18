@@ -23,7 +23,7 @@ init =
 
         {- TODO
            Change the existing feedbacks to Just <feedback> and
-           add a couple of merchant that don't have a feedback
+           add a couple of merchants that don't have a feedback
            (Nothing).
         -}
         merchants =
