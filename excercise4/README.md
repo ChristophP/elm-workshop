@@ -17,8 +17,8 @@ npm start
 ```
 Open your browser at `http://localhost:8000`
 
-Open `Main.elm` in the editor and check the TODO comments in the file and the
-compiler messages.
+Open `Data.elm` in the editor first and check the TODO comments in the file.
+Then go to the other elm files and the compiler messages.
 
 *Bonus:*
 Try to make the currentMerchant optional too, by using a Maybe type.
