@@ -35,11 +35,25 @@ viewListItem currentMerchant merchant =
             [ text merchant.name, viewFeedback merchant.feedback ]
 
 
+viewFeedbackText : Feedback -> String
+viewFeedbackText feedback =
+    case feedback of
+        Positive ->
+            "Great"
+
+        Negative ->
+            "Sucks"
+
+        OtherFeedback comment ->
+            "(Other) " ++ comment
+
+
 
 {- TODO
-   Use pattern matching to check if there is Just <feedback> or
-   nothing and add a branch for the Nothing case saying
-   "Not available"
+   Change the type signature to accept a Maybe Feedback intead of Feedback
+   Then use pattern matching in a case statement to check if there is
+   Just <feedback> or nothing. If is is Nothing set the `feedbackText`
+   to "Not available"
 -}
 
 
@@ -47,15 +61,7 @@ viewFeedback : Feedback -> Html Msg
 viewFeedback feedback =
     let
         feedbackText =
-            case feedback of
-                Positive ->
-                    "Great"
-
-                Negative ->
-                    "Sucks"
-
-                OtherFeedback comment ->
-                    "(Other) " ++ comment
+            viewFeedbackText feedback
     in
         span [ class "feedback" ] [ text ("Feedback: " ++ feedbackText) ]
 

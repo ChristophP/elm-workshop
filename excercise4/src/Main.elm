@@ -18,14 +18,14 @@ main =
 init : ( Model, Cmd Msg )
 init =
     let
-        first =
-            Merchant "Hairdresser" Positive
-
         {- TODO
            Change the existing feedbacks to Just <feedback> and
            add a couple of merchants that don't have a feedback
            (Nothing).
         -}
+        first =
+            Merchant "Hairdresser" (Just Positive)
+
         merchants =
             [ first
             , Merchant "Car Shop" Negative
