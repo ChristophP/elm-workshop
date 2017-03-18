@@ -1,6 +1,6 @@
 module Main exposing (..)
 
-import Html exposing (beginnerProgram, div, button, text)
+import Html exposing (Html, beginnerProgram, div, button, text)
 import Html.Events exposing (onClick)
 
 
@@ -12,6 +12,11 @@ type alias Model =
 {--
 TODO add two messages, one that doubles the current value
 and one that halves it
+--}
+{--
+TODO Bonus: When you're done with the rest try to refactor the code so that you
+only have an (Add Int) and a (Multiply Float) message. Using messages with
+arguments allows you to reduce the number of messages you need to declare.
 --}
 
 
